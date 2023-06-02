@@ -65,3 +65,6 @@ Design - 1 hour (mobile and desktop). \
 Implementation - 3 hours. \
 Testing - 30 minutes. \
 Documentation - 30 minutes
+
+## For clean testing or starting a fresh test
+Kindly navigate to the session storage and clear it then refresh the page
