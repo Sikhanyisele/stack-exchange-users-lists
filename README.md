@@ -44,3 +44,20 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Decisions Took When implementing the project
+
+Well there is nothing hectic which I did. It was a matter of following the React best practices.
+This is React, and the app needs to be responsive, hence I decided to use Tailwind to make things easier
+At first there was a challenge with getting the response back from the API as it had request limits, this
+is why you will see a commented out mocky API URL in the App.tsx file, this
+was for testing purposes and also to avoid the request limitations, it is the same API as it has the same data as when you normally 
+get from the stackexchange API.
+
+## Estimations
+
+Review - 1 hour. \
+Design - 1 hour (mobile and desktop). \
+Implementation - 3 hours. \
+Testing - 30 minutes. \
+Documentation - 30 minutes
