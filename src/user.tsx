@@ -73,7 +73,7 @@ const User = ({item, i}: {item: any, i: any}) => {
                                 </div>
                             )}
                             {!unfollow  && (
-                                <div className="panel text-blue-950 text-center font-bold pb-1 lg:p-0 md:p-0 place-items-center">
+                                <div className="panel  text-blue-950 text-center font-bold pb-1 lg:p-0 md:p-0 place-items-center">
                                     <button className='border border-2 w-[101px] border-teal-600 ' onClick={() => { OnClickUnfollow() } }>UNFOLLOW</button>
                                 </div>
                             )}
