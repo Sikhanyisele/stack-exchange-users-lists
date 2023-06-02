@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import User from "./user";
 function App() {
-  // const USERS_API_URL = 'https://run.mocky.io/v3/c4464f53-cbc6-4cab-859a-7409f3440c96';
-  const USERS_API_URL = 'https://api.stackexchange.com/2.2/users?pagesize=20&order=desc&sort=reputation&site=stackoverflow';
+  const USERS_API_URL = 'https://run.mocky.io/v3/c4464f53-cbc6-4cab-859a-7409f3440c96';
+  // const USERS_API_URL = 'https://api.stackexchange.com/2.2/users?pagesize=20&order=desc&sort=reputation&site=stackoverflow';
   const [users, setUsers] = useState([] as  any);
   const headers = {'APIKEY':'CCE5M6)g5V)wSQn0ylpEAA'}
   const [query, setQuery] = useState("")
@@ -46,7 +46,7 @@ function App() {
                   <input placeholder='Search user by name' className='border border-2 border-amber-400 p-1' type="text" onChange={event => setQuery(event.target.value)} />
               </div>
           </div>
-      <div className='  max-container-center border-t-gray-50 mx-auto grid md:grid-cols-3 gap-2 grid-cols-1 items-end place-items-center'>
+      <div className='max-container-center border-t-gray-50 mx-auto grid md:grid-cols-3 gap-2 grid-cols-1 items-end place-items-center'>
           { users.filter((user: any) => {
               if (query === "") {
                   return user;
@@ -56,7 +56,7 @@ function App() {
           }).map((user:any, i:number) => {
               return (
                   <>
-                      <User item={user} />
+                      <User item={user} i={i} />
                   </>
               )
           })}

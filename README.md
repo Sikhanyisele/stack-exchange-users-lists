@@ -54,6 +54,10 @@ is why you will see a commented out mocky API URL in the App.tsx file, this
 was for testing purposes and also to avoid the request limitations, it is the same API as it has the same data as when you normally 
 get from the stackexchange API.
 
+In the App.tsx file you will notice the actual API is commented out and that is because of the request limitation even when not connected to 
+the VPN, I have then replaced with the Mocky API as mentioned above. Please feel free to comment out the mocky API and replace with the actual one below,
+it will still run for as long as there is no request limitation
+
 ## Estimations
 
 Review - 1 hour. \
